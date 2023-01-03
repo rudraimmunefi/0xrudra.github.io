@@ -114,7 +114,7 @@ Examining further I found out that it generated a secret token `_secret_token = 
 
 The following code was responsible for handling password reset and the step where I was stuck to figure out how will I be able to steal the secret token as we do not have control over the URL parameter.
 
-I reached out to my friend and @fredd from THC helped me with the hint of Host header injection, and it worked. Reading the source again there was `_external` set to true.
+I reached out to my friend and @fredd from THC helped me with the hint of Host header injection, and it worked. Reading the source again there was parameter `_external` set to true.
 
 Reading the docs it was known why it worked.
 
